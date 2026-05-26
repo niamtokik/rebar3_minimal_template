@@ -1,0 +1,22 @@
+{description, "minimalist template"}.
+{variables, []}.
+
+{dir, "{{name}}"}.
+{file, "minimal/_gitignore", "{{name}}/.gitignore"}.
+{file, "minimal/_tool-versions", "{{name}}/.tool-versions"}.
+{file, "minimal/AGENTS.md", "{{name}}/AGENTS.md"}.
+{file, "minimal/README.md", "{{name}}/README.md"}.
+{file, "minimal/CONTRIBUTING.md", "{{name}}/CONTRIBUTING.md"}.
+{file, "minimal/SECURITY.md", "{{name}}/SECURITY.md"}.
+{template, "minimal/LICENSE", "{{name}}/LICENSE"}.
+{template, "minimal/rebar.config", "{{name}}/rebar.config"}.
+{template, "minimal/Makefile", "{{name}}/Makefile"}.
+
+{dir, "{{name}}/src"}.
+{template, "minimal/src/minimal.app.src", "{{name}}/src/{{name}}.app.src"}.
+{template, "minimal/src/minimal.erl", "{{name}}/src/{{name}}.erl"}.
+{template, "minimal/src/minimal_app.erl", "{{name}}/src/{{name}}_app.erl"}.
+{template, "minimal/src/minimal_sup.erl", "{{name}}/src/{{name}}_sup.erl"}.
+
+{dir, "{{name}}/test"}.
+{template, "minimal/test/minimal_SUITE.erl", "{{name}}/test/{{name}}_SUITE.erl"}.
